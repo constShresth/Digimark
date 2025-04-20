@@ -101,7 +101,6 @@ A digital platform that automates evaluation of scanned handwritten answer sheet
 
 ## 🖼️ Screenshots  
 
-> _Add screenshots below after development is complete._  
 
 ### 📷 Home Page  
 ![Home Page](<Screenshot 2025-04-20 at 11.59.21.png>)
@@ -115,13 +114,6 @@ A digital platform that automates evaluation of scanned handwritten answer sheet
 ![Report](<Screenshot 2025-04-20 at 11.33.46.png>)
 
 ![Report](<Screenshot 2025-04-20 at 11.33.58.png>)
-
----
-
-## 🎥 Demo Video  
-> _Embed or link your project demo video here._  
-
-[![Watch Demo]](<video controls src="Screen Recording 2025-04-20 at 12.00.49.mov" title="Title"></video>)
 
 ---
 
