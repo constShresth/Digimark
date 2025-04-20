@@ -1,0 +1,126 @@
+from fpdf import FPDF
+import os
+import base64
+from datetime import datetime
+
+class ReportGenerator:
+    def __init__(self, upload_folder):
+        """Initialize Report Generator"""
+        self.upload_folder = upload_folder
+        self.reports_dir = os.path.join(upload_folder, 'reports')
+        os.makedirs(self.reports_dir, exist_ok=True)
+    
+    def generate_pdf_report(self, student_name, student_id, exam_title, results_df, evaluation_results, charts, performance_metrics):
+        """Generate a PDF report with evaluation results and charts"""
+        pdf = FPDF()
+        pdf.add_page()
+        
+        # Title
+        pdf.set_font('Arial', 'B', 16)
+        pdf.cell(0, 10, f"Evaluation Report: {exam_title}", 0, 1, 'C')
+        
+        # Student information
+        pdf.set_font('Arial', '', 12)
+        pdf.cell(0, 10, f"Student Name: {student_name}", 0, 1)
+        pdf.cell(0, 10, f"Student ID: {student_id}", 0, 1)
+        pdf.cell(0, 10, f"Date: {datetime.now().strftime('%Y-%m-%d %H:%M')}", 0, 1)
+        
+        # Overall performance
+        pdf.ln(5)
+        pdf.set_font('Arial', 'B', 14)
+        pdf.cell(0, 10, "Overall Performance", 0, 1)
+        
+        pdf.set_font('Arial', '', 12)
+        pdf.cell(0, 10, f"Total Score: {performance_metrics['total_score']} / {performance_metrics['max_score']} ({performance_metrics['percentage']:.1f}%)", 0, 1)
+        
+        # Add overall performance chart
+        if 'overall_performance' in charts:
+            # Decode base64 image
+            img_data = base64.b64decode(charts['overall_performance'])
+            img_file = os.path.join(self.reports_dir, 'temp_overall.png')
+            with open(img_file, 'wb') as f:
+                f.write(img_data)
+            
+            # Add image to PDF
+            pdf.image(img_file, x=50, y=pdf.get_y(), w=100)
+            pdf.ln(100)  # Move down to make space for the image
+            
+            # Remove temporary file
+            os.remove(img_file)
+        
+        # Question-wise performance
+        pdf.add_page()
+        pdf.set_font('Arial', 'B', 14)
+        pdf.cell(0, 10, "Question-wise Performance", 0, 1)
+        
+        # Add score distribution chart
+        if 'score_distribution' in charts:
+            # Decode base64 image
+            img_data = base64.b64decode(charts['score_distribution'])
+            img_file = os.path.join(self.reports_dir, 'temp_scores.png')
+            with open(img_file, 'wb') as f:
+                f.write(img_data)
+            
+            # Add image to PDF
+            pdf.image(img_file, x=10, y=pdf.get_y(), w=180)
+            pdf.ln(80)  # Move down to make space for the image
+            
+            # Remove temporary file
+            os.remove(img_file)
+        
+        # Question details
+        pdf.set_font('Arial', 'B', 12)
+        pdf.cell(20, 10, "Q.No.", 1, 0, 'C')
+        pdf.cell(30, 10, "Score", 1, 0, 'C')
+        pdf.cell(30, 10, "Max Score", 1, 0, 'C')
+        pdf.cell(40, 10, "Percentage", 1, 0, 'C')
+        pdf.cell(70, 10, "Feedback", 1, 1, 'C')
+        
+        pdf.set_font('Arial', '', 10)
+        for _, row in results_df.iterrows():
+            question_id = row['Question']
+            pdf.cell(20, 10, str(question_id), 1, 0, 'C')
+            pdf.cell(30, 10, str(row['Score']), 1, 0, 'C')
+            pdf.cell(30, 10, str(row['Max Score']), 1, 0, 'C')
+            pdf.cell(40, 10, f"{row['Percentage']:.1f}%", 1, 0, 'C')
+            
+            # Add feedback with multi-cell to handle long text
+            current_x = pdf.get_x()
+            current_y = pdf.get_y()
+            pdf.multi_cell(70, 10, evaluation_results[question_id]['feedback'][:100] + "..." if len(evaluation_results[question_id]['feedback']) > 100 else evaluation_results[question_id]['feedback'], 1, 'L')
+            
+            # If the multi-cell created a new page or moved down multiple lines, reset position
+            if pdf.get_y() > current_y + 10:
+                pdf.set_xy(current_x + 70, current_y + 10)
+        
+        # Keyword matching analysis
+        pdf.add_page()
+        pdf.set_font('Arial', 'B', 14)
+        pdf.cell(0, 10, "Keyword Matching Analysis", 0, 1)
+        
+        # Add keyword chart
+        if 'keyword_matching' in charts:
+            # Decode base64 image
+            img_data = base64.b64decode(charts['keyword_matching'])
+            img_file = os.path.join(self.reports_dir, 'temp_keywords.png')
+            with open(img_file, 'wb') as f:
+                f.write(img_data)
+            
+            # Add image to PDF
+            pdf.image(img_file, x=10, y=pdf.get_y(), w=180)
+            pdf.ln(80)  # Move down to make space for the image
+            
+            # Remove temporary file
+            os.remove(img_file)
+        
+        # Footer
+        pdf.set_y(-15)
+        pdf.set_font('Arial', 'I', 8)
+        pdf.cell(0, 10, f"Generated by Digital Marking System - {datetime.now().strftime('%Y-%m-%d %H:%M')}", 0, 0, 'C')
+        
+        # Save the PDF
+        report_filename = f"report_{student_id}_{datetime.now().strftime('%Y%m%d%H%M%S')}.pdf"
+        report_path = os.path.join(self.reports_dir, report_filename)
+        pdf.output(report_path)
+        
+        return report_filename

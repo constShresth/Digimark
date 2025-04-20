@@ -1,0 +1,111 @@
+{% extends 'base.html' %}
+
+{% block title %}Digital Marking System - About{% endblock %}
+
+{% block content %}
+
+<div class="flex justify-center mt-8">
+  <div class="w-full max-w-4xl">
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+          <div class="bg-[#1e3a8a] text-white p-4">
+              <h3 class="text-xl font-semibold">About Digital Marking System</h3>
+          </div>
+          <div class="p-6 bg-neutral-light">
+              <h4 class="text-lg font-semibold mb-4 text-navy-blue">Overview</h4>
+              <p class="text-gray-700 mb-6">
+                  The Digital Marking System is an AI-powered solution designed for the District Development Office in Banaskantha to automate the evaluation of handwritten exam papers. This system reduces the time and effort required for manual evaluation, ensures consistency in marking, and provides detailed feedback and analytics.
+              </p>
+              
+              <h4 class="text-lg font-semibold mb-4 text-navy-blue">Key Features</h4>
+              <ul class="list-disc list-inside text-gray-700 mb-6">
+                  <li><strong>Automated Evaluation:</strong> Uses OCR technology to extract text from scanned answer sheets and evaluate them against model answers.</li>
+                  <li><strong>Keyword Analysis:</strong> Identifies key concepts in student answers and compares them with expected keywords.</li>
+                  <li><strong>Semantic Similarity:</strong> Measures how closely the student's answer aligns with the model answer in meaning.</li>
+                  <li><strong>Detailed Feedback:</strong> Provides specific feedback on what concepts are missing or well-addressed in each answer.</li>
+                  <li><strong>Performance Analytics:</strong> Generates visual representations of student performance across questions.</li>
+                  <li><strong>PDF Reports:</strong> Creates comprehensive PDF reports that can be downloaded and shared.</li>
+              </ul>
+              
+              <h4 class="text-lg font-semibold mb-4 text-navy-blue">How It Works</h4>
+              <ol class="list-decimal list-inside text-gray-700 mb-6">
+                  <li>Upload a scanned answer sheet (JPG or PDF format)</li>
+                  <li>Upload an answer key (JPG, PDF, or TXT format)</li>
+                  <li>The system extracts text from the answer sheet using OCR</li>
+                  <li>Answers are evaluated against the model answers using keyword matching and semantic similarity</li>
+                  <li>Scores and feedback are generated for each answer</li>
+                  <li>Performance analytics and visualizations are created</li>
+                  <li>A comprehensive report is generated that can be viewed online or downloaded as PDF</li>
+              </ol>
+              
+              <h4 class="text-lg font-semibold mb-4 text-navy-blue">Benefits</h4>
+              <ul class="list-disc list-inside text-gray-700 mb-6">
+                  <li><strong>Time Savings:</strong> Reduces evaluation time by up to 70%</li>
+                  <li><strong>Consistency:</strong> Ensures uniform evaluation criteria across all papers</li>
+                  <li><strong>Detailed Insights:</strong> Provides analytics that help identify knowledge gaps</li>
+                  <li><strong>Reduced Workload:</strong> Frees up teachers to focus on teaching rather than grading</li>
+                  <li><strong>Faster Feedback:</strong> Students receive detailed feedback much sooner</li>
+              </ul>
+              
+              <h4 class="text-lg font-semibold mb-4 text-navy-blue">Contact</h4>
+              <p class="text-gray-700">
+                  For more information or support, please contact the District Development Office, Banaskantha.
+              </p>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+<!-- <div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card shadow">
+            <div class="card-header bg-primary text-white">
+                <h3 class="card-title mb-0">About Digital Marking System</h3>
+            </div>
+            <div class="card-body">
+                <h4>Overview</h4>
+                <p>
+                    The Digital Marking System is an AI-powered solution designed for the District Development Office in Banaskantha to automate the evaluation of handwritten exam papers. This system reduces the time and effort required for manual evaluation, ensures consistency in marking, and provides detailed feedback and analytics.
+                </p>
+                
+                <h4>Key Features</h4>
+                <ul>
+                    <li><strong>Automated Evaluation:</strong> Uses OCR technology to extract text from scanned answer sheets and evaluate them against model answers.</li>
+                    <li><strong>Keyword Analysis:</strong> Identifies key concepts in student answers and compares them with expected keywords.</li>
+                    <li><strong>Semantic Similarity:</strong> Measures how closely the student's answer aligns with the model answer in meaning.</li>
+                    <li><strong>Detailed Feedback:</strong> Provides specific feedback on what concepts are missing or well-addressed in each answer.</li>
+                    <li><strong>Performance Analytics:</strong> Generates visual representations of student performance across questions.</li>
+                    <li><strong>PDF Reports:</strong> Creates comprehensive PDF reports that can be downloaded and shared.</li>
+                </ul>
+                
+                <h4>How It Works</h4>
+                <ol>
+                    <li>Upload a scanned answer sheet (JPG or PDF format)</li>
+                    <li>Upload an answer key (JPG, PDF, or TXT format)</li>
+                    <li>The system extracts text from the answer sheet using OCR</li>
+                    <li>Answers are evaluated against the model answers using keyword matching and semantic similarity</li>
+                    <li>Scores and feedback are generated for each answer</li>
+                    <li>Performance analytics and visualizations are created</li>
+                    <li>A comprehensive report is generated that can be viewed online or downloaded as PDF</li>
+                </ol>
+                
+                <h4>Benefits</h4>
+                <ul>
+                    <li><strong>Time Savings:</strong> Reduces evaluation time by up to 70%</li>
+                    <li><strong>Consistency:</strong> Ensures uniform evaluation criteria across all papers</li>
+                    <li><strong>Detailed Insights:</strong> Provides analytics that help identify knowledge gaps</li>
+                    <li><strong>Reduced Workload:</strong> Frees up teachers to focus on teaching rather than grading</li>
+                    <li><strong>Faster Feedback:</strong> Students receive detailed feedback much sooner</li>
+                </ul>
+                
+                <h4>Contact</h4>
+                <p>
+                    For more information or support, please contact the District Development Office, Banaskantha.
+                </p>
+            </div>
+        </div>
+    </div>
+</div> -->
+{% endblock %}

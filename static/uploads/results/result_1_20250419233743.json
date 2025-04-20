@@ -1,0 +1,50 @@
+{
+    "student_name": "Mukunj",
+    "student_id": "1",
+    "exam_title": "Chemistry",
+    "timestamp": "2025-04-19 23:37:43",
+    "evaluation_results": {
+        "q1": {
+            "extracted_text": "(b) To calculate the mass of copper deposited:\n\nCurrent (I) = 2 amperes\n\nTime (t) = 30 minutes = 30 x 60 = 1800 seconds\n\nQuantity of electricity (Q) =| x t = 2 x 1800 = 3600 coulombs\n1 Faraday = 96500 coulombs = 1 mole of electrons\n\nNumber of moles of electrons = 3600/96500 = 0.0373 moles\nFor copper deposition: Cu?* + 2e- > Cu\n\nSo, 2 moles of electrons deposit 1 mole of copper\n\nNiimhar af malac af rannar \u2014 1112972/9 \u2014N 1860 malac",
+            "score": 0.2,
+            "max_score": 10,
+            "feedback": "Your answer is missing key concepts: hybrid, orbital, carbon, overlaps, orbital. Your answer differs significantly from the expected response.",
+            "matched_keywords": [],
+            "keywords": [
+                "hybrid",
+                "orbital",
+                "carbon",
+                "overlaps",
+                "orbital"
+            ]
+        },
+        "q2": {
+            "extracted_text": "ON INDE IEE ONE I I ENA ENED IEE EIDE\nMass of copper = 0.01865 x 63.5 = 1.18 g\nAnswer 3:\n(a} Hybridization in methane (CH4}:\nIn methane, the carbon atom undergoes sp? hybridization. The ground state electronic\nconfiguration of carbon is 1s? 2s? 2p. During hybridization, one electron from the 2s orbital\nis promoted to the empty 29 orbital, resulting in four unpaired electrons. The 2s and three\n2p orbitals then mix to form four equivalent sp? hybrid orbitals.\nThese sp? hybrid orbitals are oriented in a tetrahedral arrangement with bond angles of\n109.5\u00b0. Each sp? hybrid orbital of carbon overlaps with the 1s orbital of a hydrogen atom to\nform four equivalent C-H sigma bonds. This tetrahedral arrangement gives methane its\nstable structure and explains its geometry.\n(b) Lewis structure and VSEPR theory for PClz:",
+            "score": 1.4,
+            "max_score": 10,
+            "feedback": "Your answer is missing key concepts: chlorine, axial, positions, molecular. Your answer differs significantly from the expected response. Your answer is unnecessarily long. Try to be more concise.",
+            "matched_keywords": [
+                "atoms"
+            ],
+            "keywords": [
+                "chlorine",
+                "atoms",
+                "axial",
+                "positions",
+                "molecular"
+            ]
+        },
+        "q3": {
+            "extracted_text": "The Lewis structure of PCl; shows the phosphorus atom at the center with five single bonds\nto chlorine atoms. Phosphorus has 5 valence electrons, and each chlorine contributes 7\nvalence electrons. Phosphorus uses all its 5 valence electrons to form 5 bonds with chlorine\natoms.\n\nAccording to VSEPR theory, the five electron pairs (all bonding pairs} around the phosphorus\natom adopt a trigonal bipyramidal arrangement to minimize electron-pair repulsion. Three\nchlorine atoms lie in the equatorial plane at 120\u00b0 angles to each other, while two chlorine\natoms occupy the axial positions at 180\u00b0 to each other. The axial bonds are slightly longer\nthan the equatorial bonds due to greater repulsion. The molecular geometry of PCI; is\ntrigonal bipyramidal.",
+            "score": 0.0,
+            "max_score": 10,
+            "feedback": "Your answer differs significantly from the expected response. Your answer is unnecessarily long. Try to be more concise.",
+            "matched_keywords": [],
+            "keywords": []
+        }
+    },
+    "total_score": 1.5999999999999999,
+    "max_score": 30,
+    "percentage": 5.333333333333333,
+    "report_filename": "report_1_20250419233743.pdf"
+}

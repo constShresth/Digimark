@@ -1,0 +1,54 @@
+{
+    "student_name": "lkjlj",
+    "student_id": "103948",
+    "exam_title": "chemistry",
+    "timestamp": "2025-04-20 10:59:15",
+    "evaluation_results": {
+        "q1": {
+            "extracted_text": "Answer 3:\n\nLewis structure and VSEPR theory for PCI:\n\nThe Lewis structure of PCl; shows the phosphorus atom at the center with five single bonds\nto chlorine atoms. Phosphorus has 5 valence electrons, and each chlorine contributes 7\nvalence electrons. Phosphorus uses all its 5 valence electrons to form 5 bonds with chlorine\natoms.\n\nAccording to VSEPR theory, the five electron pairs (all bonding pairs} around the phosphorus\natom adopt a trigonal bipyramidal arrangement to minimize electron-pair repulsion. Three",
+            "score": 0.0,
+            "max_score": 10,
+            "feedback": "Your answer is missing key concepts: Question, change, concentration, reactants, products. Your answer differs significantly from the expected response.",
+            "matched_keywords": [],
+            "keywords": [
+                "Question",
+                "change",
+                "concentration",
+                "reactants",
+                "products"
+            ]
+        },
+        "q2": {
+            "extracted_text": "chlorine atoms lie in the equatorial plane at 120\u00b0 angles to each other, while two chlorine\natoms occupy the axial positions at 180\u00b0 to each other. The axial bonds are slightly longer\nthan the equatorial bonds due to greater repulsion. The molecular geometry of PCI; is\ntrigonal bipyramidal.",
+            "score": 0.4,
+            "max_score": 10,
+            "feedback": "Your answer is missing key concepts: Question, First, substance, deposited, electrode. Your answer differs significantly from the expected response.",
+            "matched_keywords": [],
+            "keywords": [
+                "Question",
+                "First",
+                "substance",
+                "deposited",
+                "electrode"
+            ]
+        },
+        "q3": {
+            "extracted_text": "",
+            "score": 0,
+            "max_score": 10,
+            "feedback": "No answer provided.",
+            "matched_keywords": [],
+            "keywords": [
+                "TMPee",
+                "CHOMME",
+                "CQUdLOlIdl",
+                "Plane",
+                "alleles"
+            ]
+        }
+    },
+    "total_score": 0.4,
+    "max_score": 30,
+    "percentage": 1.3333333333333335,
+    "report_filename": "report_103948_20250420105915.pdf"
+}

@@ -1,0 +1,69 @@
+{
+    "student_name": "Cristiano Ronaldo",
+    "student_id": "1000007",
+    "exam_title": "Science",
+    "timestamp": "2025-04-20 11:31:17",
+    "evaluation_results": {
+        "q1": {
+            "extracted_text": "Answer 1:\n\nThe rate of a chemical reaction is defined as the change in concentration of reactants or products per unit time.\nIt is usually expressed as the decrease in concentration of reactants or increase in concentration of products\nper unit time.\n\nFor a first-order reaction, the rate is proportional to the concentration of the reactant:\n\nRate = -d[A]/dt = k[A]\n\nTo derive the integrated rate equation:\n\nd[A]/[A] = -k dt\n\nIntegrating both sides:\n\nSAITAMA] = -kfdt",
+            "score": 7.9,
+            "max_score": 10,
+            "feedback": "Your answer partially addresses the question.",
+            "matched_keywords": [
+                "change",
+                "concentration",
+                "reactants",
+                "products",
+                "time."
+            ],
+            "keywords": [
+                "change",
+                "concentration",
+                "reactants",
+                "products",
+                "time."
+            ]
+        },
+        "q2": {
+            "extracted_text": "INjA} = -kt + C\nAtt =0, [A] = [Alo, so C = In[A]o\n\nTherefore, In[A]: = In[A]o - kt\n\nThis can be rearranged to: In[A]o/[Ale = kt\n\nFor the half-life calculation:\n\nti/s = 0.693/k\n\nti = 0.693/0.0693 = 10 minutes\n\nAnswer 2:\n\nFaraday's laws of electrolysis:\n\nFirst law: The mass of a substance deposited at an electrode during electrolysis is directly proportional to the\nquantity of electricity passed through the electrolyte.\n\nm & Qor m= ZQ (where Z is the electrochemical equivalent)",
+            "score": 7.4,
+            "max_score": 10,
+            "feedback": "Your answer partially addresses the question.",
+            "matched_keywords": [
+                "First",
+                "substance",
+                "deposited",
+                "electrode",
+                "electrolysis"
+            ],
+            "keywords": [
+                "First",
+                "substance",
+                "deposited",
+                "electrode",
+                "electrolysis"
+            ]
+        },
+        "q3": {
+            "extracted_text": "second law. vyvnen the same quantity OF Clectricity IS passed througn airerent electrolytes, the Masses OF\nsubstances deposited are proportional to their chemical equivalent weights.\n\nAnswer 3:\n\nThe Lewis structure of PCls shows the phosphorus atom at the center with five single bonds to chlorine atoms.\nPhosphorus has 5 valence electrons, and each chlorine contributes 7 valence electrons. Phosphorus uses all its\n5 valence electrons to form 5 bonds with chlorine atoms.\n\nAccording to VSEPR theory, the five electron pairs (all bonding pairs} around the phosphorus atom adopt a\ntrigonal bipyramidal arrangement to minimize electron-pair repulsion. Three chlorine atoms lie in the\nequatorial plane at 120\u00b0 angles to each other, while two chlorine atoms occupy the axial positions at 180\u00b0 to\neach other. The axial bonds are slightly longer than the equatorial bonds due to greater repulsion. The\nmolecular geometry of PCls is trigonal bipyramidal.",
+            "score": 4.7,
+            "max_score": 10,
+            "feedback": "Your answer is missing key concepts: SUPUCTUTE, PHOSPMOTUS, QOMGS. Your answer partially addresses the question.",
+            "matched_keywords": [
+                "LEWIS",
+                "SHOWS"
+            ],
+            "keywords": [
+                "LEWIS",
+                "SUPUCTUTE",
+                "SHOWS",
+                "PHOSPMOTUS",
+                "QOMGS"
+            ]
+        }
+    },
+    "total_score": 20.0,
+    "max_score": 30,
+    "percentage": 66.66666666666666,
+    "report_filename": "report_1000007_20250420113117.pdf"
+}
