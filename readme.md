@@ -103,13 +103,13 @@ A digital platform that automates evaluation of scanned handwritten answer sheet
 
 > _Add screenshots below after development is complete._  
 
-### 📷 Screenshot 1: Home Page  
+### 📷 Home Page  
 ![Home Page](<Screenshot 2025-04-20 at 11.59.21.png>)
 
-### 📷 Screenshot 2: Upload Answer Sheet  
+### 📷 Upload Answer Sheet  
 ![Upload Files](<Screenshot 2025-04-20 at 11.27.50.png>)
 
-### 📷 Screenshot 3: Report 
+### 📷 Report 
 ![Report](<Screenshot 2025-04-20 at 11.31.33.png>)
 
 ![Report](<Screenshot 2025-04-20 at 11.33.46.png>)
@@ -121,7 +121,7 @@ A digital platform that automates evaluation of scanned handwritten answer sheet
 ## 🎥 Demo Video  
 > _Embed or link your project demo video here._  
 
-[![Watch Demo]<video controls src="Screen Recording 2025-04-20 at 12.00.49.mov" title="Title"></video>
+[![Watch Demo]](<video controls src="Screen Recording 2025-04-20 at 12.00.49.mov" title="Title"></video>)
 
 ---
 
